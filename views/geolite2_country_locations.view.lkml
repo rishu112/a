@@ -19,6 +19,7 @@ view: geolite2_country_locations {
   dimension: country_name {
     type: string
     sql: ${TABLE}.country_name ;;
+    drill_fields: [country_name, continent_name]
   }
 
   dimension: geoname_id {
