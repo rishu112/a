@@ -3,6 +3,11 @@ connection: "thelook"
 # include all the views
 include: "/views/**/*.view"
 
+access_grant: id_access {
+  user_attribute: id
+  allowed_values: ["293","292"]
+}
+
 datagroup: a_thelook_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"

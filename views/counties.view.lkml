@@ -22,6 +22,7 @@ view: counties {
   }
 
   dimension: state_code {
+    required_access_grants: [id_access]
     type: string
     sql: ${TABLE}.state_code ;;
   }
