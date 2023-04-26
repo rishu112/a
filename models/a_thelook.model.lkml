@@ -16,7 +16,7 @@ datagroup: a_thelook_default_datagroup {
 persist_with: a_thelook_default_datagroup
 
 explore: counties {
-
+required_access_grants: [id_access]
 }
 
 explore: geolite2_country_blocks {}
